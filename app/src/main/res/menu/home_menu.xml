@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_recent" android:title="Recent complaints" app:showAsAction="never" />
+    <item android:id="@+id/action_call" android:title="Call helpdesk" app:showAsAction="never" />
+    <item android:id="@+id/action_sms" android:title="SMS helpdesk" app:showAsAction="never" />
+    <item android:id="@+id/action_export" android:title="Export CSV" app:showAsAction="never" />
+    <item android:id="@+id/action_logout" android:title="Logout" app:showAsAction="never" />
+</menu>

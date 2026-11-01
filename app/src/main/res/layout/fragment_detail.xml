@@ -1,0 +1,33 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <TextView android:id="@+id/tvDetailTitle" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="22sp" android:textStyle="bold" />
+        <TableLayout android:id="@+id/detailTable" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp" android:stretchColumns="1" />
+        <TextView android:id="@+id/tvDetailDesc" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp" />
+        <ImageView android:id="@+id/ivDetailPhoto" android:layout_width="match_parent"
+            android:layout_height="220dp" android:layout_marginTop="12dp"
+            android:contentDescription="Complaint photo" android:visibility="gone" />
+        <TextView android:id="@+id/tvRateLabel" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp"
+            android:text="Rate the resolution" />
+        <RatingBar android:id="@+id/ratingBar" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:numStars="5" android:stepSize="1" />
+        <TextView android:id="@+id/tvFixedLabel" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp"
+            android:text="Photo after fix" android:textStyle="bold" android:visibility="gone" />
+        <ImageView android:id="@+id/ivFixedPhoto" android:layout_width="match_parent"
+            android:layout_height="220dp" android:layout_marginTop="4dp"
+            android:contentDescription="Photo after the problem was fixed" android:visibility="gone" />
+        <Button android:id="@+id/btnUploadFixed" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp"
+            android:text="Upload fixed photo" android:visibility="gone" />
+        <Button android:id="@+id/btnUpdateStatus" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Update status" />
+        <Button android:id="@+id/btnCategoryStats" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Category summary" />
+    </LinearLayout>
+</ScrollView>
