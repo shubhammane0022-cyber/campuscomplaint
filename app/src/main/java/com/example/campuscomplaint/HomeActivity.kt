@@ -159,7 +159,7 @@ class HomeActivity : BaseActivity(), ComplaintActions {
             file.printWriter().use { out ->
                 out.println("id,student,category,title,location,status,urgency,logged")
                 currentList.forEach {
-                    out.println("${it.id},${it.studentName.csv()},${it.category.csv()},${it.title.csv()}," +
+                    out.println("${it.id},\${\"Anonymous\".csv()},${it.category.csv()},${it.title.csv()}," +
                             "${it.location.csv()},${it.status},${it.urgency},${it.createdAt.toDateString()}")
                 }
             }

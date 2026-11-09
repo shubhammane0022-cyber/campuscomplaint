@@ -25,7 +25,7 @@ class ComplaintAdapter(private val isAdmin: Boolean, private val actions: Compla
         val c = items[position]
         with(h.b) {
             tvTitle.text = c.title
-            tvStudent.text = "By: ${c.studentName}"
+            tvStudent.text = if (isAdmin) "👤 Complained by: Anonymous" else "Your complaint"
             tvCategoryLocation.text = "${c.category} • ${c.location}"
             tvDescription.text = c.description
             tvDate.text = "${c.createdAt.toDateString()} • Urgency ${c.urgency}/5"

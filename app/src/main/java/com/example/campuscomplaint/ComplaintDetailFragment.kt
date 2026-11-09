@@ -61,7 +61,7 @@ class ComplaintDetailFragment : Fragment(R.layout.fragment_detail) {
         b.tvDetailTitle.text = c.title
         b.tvDetailDesc.text = c.description
         b.detailTable.removeAllViews()
-        listOf("Student" to c.studentName, "Category" to c.category, "Location" to c.location,
+        listOf("Student" to if (isAdmin) "Anonymous" else c.studentName, "Category" to c.category, "Location" to c.location,
             "Status" to c.status, "Urgency" to "${c.urgency} / 5",
             "Incident" to c.incidentTime.toDateTimeString(), "Logged" to c.createdAt.toDateString())
             .forEach { (k, v) -> b.detailTable.addView(row(k, v)) }
